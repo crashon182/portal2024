@@ -104,39 +104,38 @@
 
   </div>
   -->
-  <div class="fondo-noticias d-flex justify-content-center">
+  <div class="fondo-noticias">
 
   <div class="container justify-content-center">
 
           <h2><img class="icono-noticia" alt="" src=" img/icononoticias.png"  ><span style="color:black"> Últimas</span> <span style="color:#FF8540">Noticias</span>
           </h2>
+
           <div class="owl-carousel owl-theme">
               <div class="item">
                   <div class="card card-personalizado" >
                       <div class="card-body">
-                          <figure><img src="img/noticia1.jpg" alt="" class="card-img-top" ></figure>
-
-
+                          <figure  id="image1"></figure>
                           <hr/>
-                          <h6 class="text-center">Provincia proyecta acciones para la prevención de incendios</h6>
+                          <h6 id="title1" class="text-center"></h6>
                       </div>
                   </div>
               </div>
               <div class="item">
                   <div class="card card-personalizado"  >
                       <div class="card-body">
-                          <figure><img src="img/noticia2.jpg" alt="" class="card-img-top" ></figure>
+                          <figure id="image2"></figure>
                           <hr/>
-                          <h6 class="text-center">Importante respuesta al Conversatorio sobre “Reúso de Aguas Residuales”</h6>
+                          <h6 id="title2" class="text-center"></h6>
                       </div>
                   </div>
               </div>
               <div class="item">
                   <div class="card card-personalizado"  >
                       <div class="card-body">
-                          <figure><img src="img/noticia3.jpg" alt="" class="card-img-top" ></figure>
+                          <figure id="image3"></figure>
                           <hr/>
-                          <h6 class="text-center">Provincia refuerza el acompañamiento a chubutenses en Buenos Aires</h6>
+                          <h6 id="title3" class="text-center"></h6>
                       </div>
                   </div>
               </div>
@@ -144,6 +143,11 @@
 
   </div>
   </div>
+
+  <div id="data">
+
+  </div>
+
 
 
  
@@ -169,5 +173,24 @@
         }
     })
 </script>
+<script>
+    let url = 'https://prensachubut.com/api/posts/?q=Chubut'
+    fetch(url)
+    .then(response => response.json())
+    .then(data => mostrarData(data))
+    .catch(error => console.log(error))
+
+    const mostrarData = (data) => {
+        console.log(data.data.data[2].title)
+        let body = ''
+        document.getElementById('title1').innerHTML = `<h6>${data.data.data[0].title}</h6>`
+        document.getElementById('image1').innerHTML = `<img src="https://prensachubut.com${data.data.data[0].image}"  alt="" class="card-img-top" >`
+        document.getElementById('title2').innerHTML = `<h6>${data.data.data[1].title}</h6>`
+        document.getElementById('image2').innerHTML = `<img src="https://prensachubut.com${data.data.data[1].image}"  alt="" class="card-img-top" >`
+        document.getElementById('title3').innerHTML = `<h6>${data.data.data[2].title}</h6>`
+        document.getElementById('image3').innerHTML = `<img src="https://prensachubut.com${data.data.data[2].image}"  alt="" class="card-img-top" >`
+    }
+</script>
+
 </body>
 </html>
