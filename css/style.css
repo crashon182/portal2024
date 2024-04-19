@@ -82,23 +82,32 @@ header {
 
 .fondo-noticias{
   background-image: url(../img/fondonoticias.svg);
-  height: 100vh;
+  height: 700px;
   background-position-x:center;
   background-repeat:no-repeat ;
   background-size: 100% auto;
 
 }
 .fondo-noticias img{
-  height: 3%;
+  height: 30px;
   margin-top: -3px;
 }
 
+.fondo-noticias h2{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 15%;
+}
+
 /* SLIDER NOTICIAS */
-.slide-content
+
 
 .card{
   border-radius: 25px;
   background-color: #fff;
+  height: 250%;
+  margin-top: 5%;
+
 }
 .card-image{
   position: relative;
@@ -110,8 +119,20 @@ header {
 
   width: 25%;
   object-fit: cover;
-
 }
+.owl-carousel .owl-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.owl-carousel .owl-item figure{
+  aspect-ratio: 16 / 12;
+  margin: 0 auto;
+}
+.owl-theme .owl-nav {
+  display: none;
+}
+
 
 
 
@@ -153,27 +174,33 @@ header {
     
   }
   .fondo-noticias{
-    height: 43vh;
+    height: 350px;
   }
+
   .fondo-noticias h2{
     font-size: 28px;
     margin-top: -5px;
     margin-left: 5px;
   }
   .fondo-noticias img{
-    height: 8%;
+    height: 40px;
     margin-top: -4px;
+  }
+  .fondo-noticias h2{
+    text-align: center;
   }
 }
 
 @media screen and (min-width:1001px) and (max-width:3000px) {
-  .fondo-noticias{
-    height: 45vh;
+  .fondo-noticias h2{
+    text-align: center;
+    margin-top: 10%;
+
   }
-
+  .card {
+    margin-top: 10%;
+  }
 }
-
-
 
 @media screen and (max-width:500px) {
   .ratio-personalizado {
@@ -200,16 +227,34 @@ header {
     margin-right: -5%;
     
   }
-  .fondo-noticias h2{
-    font-size: 24px;
+  .fondo-noticias h6{
+    font-size: 10px;
     margin-top: -20px;
   }
+
   .fondo-noticias img{
-    height: 8%;
+    height: 20px;
     margin-top: -4px;
   }
   .fondo-noticias{
-    height: 29vh;
+
+    height: 300px;
+
+  }
+
+  .card{
+
+    margin-left: 22.5% !important;
+    margin-top:2%;
+  }
+  .card-personalizado {
+    width: 55% !important;
+  }
+
+  .container  h2{
+    margin-top:-5%;
+    text-align: center;
+    font-size: 20px;
   }
 
 }
