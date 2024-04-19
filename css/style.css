@@ -93,6 +93,25 @@ header {
   margin-top: -3px;
 }
 
+/* SLIDER NOTICIAS */
+.slide-content
+
+.card{
+  border-radius: 25px;
+  background-color: #fff;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  padding: 3px;
+}
+.card-image .card-img{
+
+  width: 25%;
+  object-fit: cover;
+
+}
 
 
 
