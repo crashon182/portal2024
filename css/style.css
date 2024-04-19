@@ -264,11 +264,11 @@ header {
     padding-top: 60px;
     margin-top: -59px;
     margin-bottom: 40px;
-    width: 50%;
+    width: 60%;
     border: solid 1px white;
     border-radius: 20px;
     background-color: white;
-    margin-left: 22%;
+    margin-left: 18%;
     
   }
   .accesos-directos img {
@@ -301,7 +301,7 @@ header {
       border: solid 1px white;
       border-radius: 20px;
       background-color: white;
-      margin-left: 17%;
+      margin-left: 13%;
       
     }
     .accesos-directos img {
@@ -322,6 +322,22 @@ header {
       margin-right: -5%;
       margin-left: 1%;
       
+    }
+
+    .card{
+      margin-left: 13%;
+      margin-top: 27%;
+
+    }
+    .owl-carousel {
+    margin-left: -11%;
+    }
+
+    .container  h2{
+      margin-top:7%;
+      text-align: center;
+      margin-left: -18%;
+      font-size: 40px;
     }
     
     }
