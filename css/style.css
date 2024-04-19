@@ -82,7 +82,7 @@ header {
 
 .fondo-noticias{
   background-image: url(../img/fondonoticias.svg);
-  height: 100vh;
+  height: 25vh;
   -ms-background-position-x:center;
   background-repeat:no-repeat ;
   background-size: 100% auto;
