@@ -226,7 +226,7 @@ header {
   .owl-carousel {
 
     margin-top: 15%;
-    margin-top: 13%;
+
   }
 }
 
@@ -284,6 +284,20 @@ header {
     margin-top:-5%;
     text-align: center;
     font-size: 20px;
+  }
+
+  footer .footer-widget__container .footer-widget__menu .footer-widget__link-items {
+    text-align: center;
+  }
+  html footer .footer-widget__container .footer-widget__heading {
+    text-align: center;
+  }
+  footer .footer-widget__container a.footer-brand .header-logo__img {
+    display: block;
+  }
+  .img-footer{
+    height: 65px;
+    margin-left: 10%;
   }
 
 }
