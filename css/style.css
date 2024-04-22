@@ -210,7 +210,13 @@ header {
 
 @media screen and (min-width:1001px) and (max-width:1500px) {
 
-
+  .fondo-noticias {
+    background-image: url(../img/fondonoticias.svg);
+    height: 600px;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
   .fondo-noticias h2{
     text-align: center;
 
@@ -218,6 +224,10 @@ header {
   }
   .card {
     margin-top: 25%;
+  }
+  .card-body {
+    position: relative;
+    height: 430px;
   }
 
 }
@@ -233,7 +243,7 @@ header {
     font-size: 40px;
     margin-top: 6% ;
     position: absolute;
-    margin-left: -23%;
+    margin-left: -20%;
 
   }
 
