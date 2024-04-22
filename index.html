@@ -114,10 +114,15 @@
 
           <div class="owl-carousel owl-theme">
               <div class="item">
-                  <div class="card card-personalizado" >
+                  <div class="card card-personalizado h-75" >
                       <div class="card-body">
+
+                            <span  id="categoria1"></span>
+
+
                           <figure  id="image1"></figure>
                           <hr/>
+                          <h6 id="fecha1" ></h6>
                           <h6 id="title1" class="text-center"></h6>
                       </div>
                   </div>
@@ -125,8 +130,10 @@
               <div class="item">
                   <div class="card card-personalizado"  >
                       <div class="card-body">
+                          <span  id="categoria2"></span>
                           <figure id="image2"></figure>
                           <hr/>
+                          <h6 id="fecha2" ></h6>
                           <h6 id="title2" class="text-center"></h6>
                       </div>
                   </div>
@@ -134,8 +141,10 @@
               <div class="item">
                   <div class="card card-personalizado"  >
                       <div class="card-body">
+                          <span  id="categoria3"></span>
                           <figure id="image3"></figure>
                           <hr/>
+                          <h6 id="fecha3" ></h6>
                           <h6 id="title3" class="text-center"></h6>
                       </div>
                   </div>
@@ -241,15 +250,24 @@
     .catch(error => console.log(error))
 
     const mostrarData = (data) => {
-        console.log(data.data.data[2].title)
+        console.log(data)
         let body = ''
 
+
         document.getElementById('title1').innerHTML = `<h6>${data.data.data[0].title}</h6>`
+        document.getElementById('fecha1').innerHTML = `<h6 class="fecha-categoria">${data.data.data[0].fecha_alt}</h6> `
         document.getElementById('image1').innerHTML = `<img src="https://prensachubut.com${data.data.data[0].image}"  alt="" class="card-img-top" >`
+        document.getElementById('categoria1').innerHTML = `<span class="badge  " >${data.data.data[0].category_name}</span> `
+
         document.getElementById('title2').innerHTML = `<h6>${data.data.data[1].title}</h6>`
+        document.getElementById('fecha2').innerHTML = `<h6 class="fecha-categoria">${data.data.data[1].fecha_alt}</h6> `
         document.getElementById('image2').innerHTML = `<img src="https://prensachubut.com${data.data.data[1].image}"  alt="" class="card-img-top" >`
+        document.getElementById('categoria2').innerHTML = `<span class="badge  " >${data.data.data[1].category_name}</span> `
+
         document.getElementById('title3').innerHTML = `<h6>${data.data.data[2].title}</h6>`
+        document.getElementById('fecha3').innerHTML = `<h6 class="fecha-categoria">${data.data.data[2].fecha_alt}</h6>`
         document.getElementById('image3').innerHTML = `<img src="https://prensachubut.com${data.data.data[2].image}"  alt="" class="card-img-top" >`
+        document.getElementById('categoria3').innerHTML = `<span class="badge  " >${data.data.data[2].category_name}</span> `
     }
 </script>
 

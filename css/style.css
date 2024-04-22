@@ -82,10 +82,10 @@ header {
 
 .fondo-noticias{
   background-image: url(../img/fondonoticias.svg);
-  height: 700px;
+  height: 800px;
   background-position-x:center;
   background-repeat:no-repeat ;
-  background-size: 120% auto;
+  background-size: 130% auto;
 
 }
 .fondo-noticias img{
@@ -133,6 +133,21 @@ header {
   display: none;
 }
 
+.fecha-categoria{
+  margin-left: 5%;
+}
+
+.badge{
+  float: right;
+  position: absolute;
+  margin-right:-70%;
+  margin-top: 0px;
+  background-color: #FF8540;
+}
+
+.card-body{
+  position:relative;
+}
 
 
 
@@ -197,35 +212,41 @@ header {
 
   .fondo-noticias h2{
     text-align: center;
-    margin-top: 10%;
+
 
   }
   .card {
-    margin-top: 10%;
+    margin-top: 25%;
   }
-  .owl-carousel {
 
-    margin-top: 10%;
-  }
 }
 
 @media screen and (min-width:1501px) and (max-width:2500px) {
 
 
+  .fondo-noticias{
+    position: relative;
+  }
   .fondo-noticias h2{
     text-align: center;
     font-size: 40px;
-    margin-top: 5% !important;
+    margin-top: 6% ;
+    position: absolute;
+    margin-left: -23%;
 
   }
 
 
   .card {
-    margin-top: 10%;
+    margin-top: 70%;
+
+  }
+  .card-body{
+    height: 450px;
   }
   .owl-carousel {
 
-    margin-top: 15%;
+    margin-top: 0%;
 
   }
 }
@@ -266,18 +287,18 @@ header {
   }
   .fondo-noticias{
 
-    height: 300px;
-    background-size: 135% auto;
+    height: 400px;
+    background-size: 155% auto;
 
   }
 
   .card{
 
-    margin-left: 22.5% !important;
+    margin-left: 18.5% !important;
     margin-top:6%;
   }
   .card-personalizado {
-    width: 55% !important;
+    width: 65% !important;
   }
 
   .container  h2{
