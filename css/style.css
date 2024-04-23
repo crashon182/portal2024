@@ -11,6 +11,17 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: 'Public Sans Extra Bold';
+  src: url('../fonts/PublicSans-ExtraBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+.h2{
+  font-family: "Public Sans Extra Bold";
+}
+
 body {
   background-color: #f2f2f2;
 }
@@ -49,9 +60,9 @@ header {
 .ratio-personalizado {
   --bs-aspect-ratio: 60%;
   margin-bottom: 10%;
-  margin-left: 12.5%;
+  margin-left: 6.5%;
   margin-top: 5%;
-  width: 70%;
+  width: 80%;
 }
 
 /* Acceos directos*/
@@ -78,6 +89,10 @@ header {
   padding-left: 18%;
   margin-top: 4%;
   margin-bottom: 5%;
+}
+
+.accesos-contenedor {
+  padding-top: 25%;
 }
 .accesos-contenedor .columna {
   
@@ -125,6 +140,9 @@ header {
   width: 25%;
   object-fit: cover;
 }
+.owl-carousel{
+  margin-left:-1%;
+}
 .owl-carousel .owl-item img {
   object-fit: cover;
   width: 100%;
@@ -162,15 +180,18 @@ header {
     margin-bottom: 50px;
     width: 80%;
   }
+  .accesos{
+    height: 90%;
+  }
   .accesos-contenedor {
-    padding-top: 60px;
+    padding-top: 20px;
     margin-top: -59px;
     margin-bottom: 40px;
-    width: 80%;
+    width: 60%;
     border: solid 1px white;
     border-radius: 20px;
     background-color: white;
-    margin-left: 13%;
+    margin-left: 17%;
     
   }
   .accesos-directos img {
@@ -184,7 +205,7 @@ header {
     padding-left: 3%;
     margin-top: 2%;
     margin-bottom: 10%;
-    margin-left: -1%;
+    margin-left: -5%;
   }
   .accesos-contenedor .columna {
   
@@ -198,7 +219,7 @@ header {
   .fondo-noticias h2{
     font-size: 28px;
     margin-top: -5px;
-    margin-left: 5px;
+    margin-left: -1%;
   }
   .fondo-noticias img{
     height: 40px;
@@ -249,6 +270,10 @@ header {
   .fondo-noticias{
     position: relative;
   }
+  .fondo-noticias img {
+    height: 40px;
+    margin-top: -14px;
+  }
   .fondo-noticias h2{
     text-align: center;
     font-size: 40px;
@@ -268,8 +293,14 @@ header {
   }
   .owl-carousel {
 
-    margin-top: 0%;
+    margin-left: -5%;
 
+  }
+  .container  h2{
+    margin-top:5%;
+    text-align: center;
+    margin-left: -23%;
+    font-size: 40px;
   }
 }
 
@@ -314,6 +345,9 @@ header {
 
 @media screen and (max-width:500px) {
 
+  .accesos-contenedor{
+    padding-top:5%
+  }
   .ratio-personalizado {
     --bs-aspect-ratio: 60%;
     margin-bottom: 50px;
@@ -387,14 +421,14 @@ header {
 
 @media screen and (min-width:1000px) {
   .accesos-contenedor {
-    padding-top: 60px;
+    padding-top: 25px;
     margin-top: -59px;
     margin-bottom: 40px;
-    width: 60%;
+    width: 50%;
     border: solid 1px white;
     border-radius: 20px;
     background-color: white;
-    margin-left: 18%;
+    margin-left: 22%;
     
   }
   .accesos-directos img {
@@ -405,10 +439,11 @@ header {
     margin-bottom: 7%;
   }
   .fila-accesos {
-    padding-left: 3%;
+    padding-left: 1%;
+    margin-right: -8%;
     margin-top: 2%;
     margin-bottom: 5%;
-    margin-left: 3%;
+    margin-left: -4%;
   }
     .accesos-contenedor .columna {
   
@@ -420,15 +455,13 @@ header {
   }
   @media screen and (min-width:1990px) {
     .accesos-contenedor {
-      padding-top: 60px;
-      margin-top: -59px;
-      margin-bottom: 40px;
-      width: 70%;
-      border: solid 1px white;
-      border-radius: 20px;
-      background-color: white;
-      margin-left: 13%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       
+    }
+    .accesos-contenedor .fila-accesos {
+      margin:auto;
     }
     .accesos-directos img {
       height: 100%;
@@ -456,13 +489,13 @@ header {
 
     }
     .owl-carousel {
-    margin-left: -11%;
+    margin-left: -2%;
     }
 
     .container  h2{
-      margin-top:7%;
+      margin-top:1%;
       text-align: center;
-      margin-left: -18%;
+      margin-left: -23%;
       font-size: 40px;
     }
     
