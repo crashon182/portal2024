@@ -170,6 +170,14 @@ header {
   position:relative;
 }
 
+footer .footer-widget__container .footer-widget__heading {
+font-family: "Public Sans Bold";
+}
+
+footer .footer-widget__container .footer-widget__menu .footer-widget__link-items .footer-widget__item .footer-widget__link span {
+  font-family: "Public Sans Regular";
+}
+
 
 
 
