@@ -277,6 +277,9 @@ footer .footer-widget__contact {
   .card-body{
     height: 430px;
   }
+  .title h6{
+    font-size: 14px;
+  }
 
 }
 
@@ -312,7 +315,7 @@ footer .footer-widget__contact {
   }
   .card-body {
     position: relative;
-    height: 350px;
+    height: 380px;
   }
   .card1{
     width: 65%;
